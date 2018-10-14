@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Sample</title>
+    <th:block th:include="layouts/mainFragment :: head"></th:block>
+</head>
+
+<body>
+
+<th:block th:include="layouts/mainFragment :: header"></th:block>
+<th:block th:include="layouts/mainFragment :: sideNavigation"></th:block>
+
+<section id="main-content">
+    <section class="wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="panel">
+                    <header class="panel-heading clearfix">
+                        <h3>Sample Page Heading...</h3>
+                    </header>
+                    <div class="panel-body">
+                        <div class="position-center">
+                         <h3>Start Adding your custom HTML content here</h3>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <!-- page end-->
+    </section>
+</section>
+
+<th:block th:include="layouts/mainFragment :: common-js"></th:block>
+</body>
+</html>

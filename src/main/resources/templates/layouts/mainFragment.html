@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<head th:fragment="head">
+    <link th:href="@{'/stylesheets/application.css'}" rel="stylesheet"/>
+</head>
+
+<body class="">
+<section id="container">
+
+    <div th:fragment="header">
+
+        <header>
+
+            <a href="/" class="logo">
+                <img src="/images/logo.png" alt=""/>
+            </a>
+
+            <br>
+            <br>
+
+            <span>Hello User</span>
+
+        </header>
+    </div>
+
+
+    <div th:fragment="sideNavigation">
+        <aside>
+            <div id="sidebar" class="nav-collapse">
+                <span>Side Nav</span>
+            </div>
+        </aside>
+    </div>
+
+
+    <!--Core js-->
+    <div th:fragment="common-js">
+        <script th:src="@{'/javascripts/jquery.min.js'}"></script>
+        <script th:src="@{'/javascripts/application.js'}"></script>
+    </div>
+</section>
+</body>
+</html>

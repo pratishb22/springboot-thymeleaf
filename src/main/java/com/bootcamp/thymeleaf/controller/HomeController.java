@@ -13,4 +13,29 @@ public class HomeController {
         return "hello";
     }
 
+    @GetMapping("js")
+    public String js() {
+        return "js";
+    }
+
+    @GetMapping("css")
+    public String css() {
+        return "css";
+    }
+
+    @GetMapping("common")
+    public String commonTemplate() {
+        return "sample";
+    }
+
+    @GetMapping("ajax")
+    public String ajax() {
+        return "ajax";
+    }
+
+    @GetMapping("enums")
+    public String enums() {
+        return "enums";
+    }
+
 }

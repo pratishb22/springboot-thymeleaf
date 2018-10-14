@@ -1,0 +1,1 @@
+console.log("static root js run");

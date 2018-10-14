@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Thymeleaf</title>
+</head>
+<body>
+<label>Competency: </label>
+<select>
+    <option th:value="None">Select One</option>
+    <option th:each="competency : ${T(com.bootcamp.thymeleaf.enums.Competency).values()}"
+            th:value="${competency.getValue()}" th:text="${competency.getValue()}"></option>
+</select>
+</body>
+</html>
