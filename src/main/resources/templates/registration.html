@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Introduction</title>
+</head>
+<body>
+<form action="#" th:action="@{/register}" th:object="${command}" method="post">
+    <p>Simple Text Field: <input type="text" th:field="*{textField}" /></p>
+    <p>Text Area Field: <textarea th:field="*{textareaField}" ></textarea></p>
+    <p>Date Field: <input type="datetime-local" th:field="*{datetimeField}" /></p>
+    <div>
+        <label th:for="singleCheckboxField" th:text="'Single Checkbox Field:'"></label>
+        <input type="checkbox" th:field="*{singleCheckboxField}" />
+    </div>
+    <input type="submit" th:value="'Hit Me'">
+</form>
+</body>
+</html>
