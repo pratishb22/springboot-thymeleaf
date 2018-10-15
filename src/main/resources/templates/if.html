@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Thymeleaf</title>
+</head>
+<body>
+<div th:if="${2 == 3} == false">
+    Should be display.1
+</div>
+
+<div th:if="${true}">
+    Should be display.2
+</div>
+
+<div th:if="${2==2} == false">
+    Should not be display.1
+</div>
+
+<div th:if="${false}">
+    Should not be display.2
+</div>
+</body>
+</html>

@@ -24,6 +24,7 @@ If we open a meta tag then we must have to close it (In html not necessary to cl
 
     /*<p th:text=”${test}”>test value</p>
      */
+    @GetMapping("modelAttribute")
     public String modelAttribute(Model model) {
         model.addAttribute("test", "test success");
         return "modelAttribute";

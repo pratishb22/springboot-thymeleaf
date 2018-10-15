@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <title>Hello Thymeleaf</title>
 </head>
-<body>
-<script th:src="@{'/javascripts/jquery.min.js'}"></script>
-<script th:src="@{'/javascripts/application.js'}"></script>
+<body th:with="var=${false}">
+
+
+    <span th:if="${var}">if</span>
+
+
+    <span th:unless="${var}">unless</span>
+
 </body>
 </html>

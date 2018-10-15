@@ -18,4 +18,38 @@ body{font-family:arial,sans-serif,Helvetica,monospace;color: #666;background: #0
 .form_sec li input[type="password"]{float: left;font-size: 15px; margin: 0 10px 3px 0;padding: 3px 15px;width: 100%;border: 0;height: 35px;width: 100%}
 .form_sec li input[type="submit"]{float: left;font-size: 15px;background:  #ed1c24;border: medium none;color: #FFFFFF;cursor: pointer;padding: 10px 18px;width: auto;}
 .form_sec li input[type="submit"]:hover{background: #000}
-
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+#header{
+    width:100%;
+    min-height:30vh;
+    background: #fff;
+}
+.logo{
+    display:inline-block;
+}
+aside, #main-content{
+    height:70vh;
+    float:left;
+    vertical-align:top;
+}
+aside{
+    width:40%;
+    background:#ff9980;
+}
+#main-content
+{
+    width:60%;
+    background:#99ccff;
+}
