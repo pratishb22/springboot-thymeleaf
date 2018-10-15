@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Thymeleaf</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Sex</td>
+        <td>Salary</td>
+        <td>Admin</td>
+    </tr>
+    <tr th:each="user : ${users}">
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.sex}"></td>
+        <td th:text="${user.salary}"></td>
+        <td th:text="${user.admin}"></td>
+    </tr>
+</table>
+<script th:src="@{'/javascripts/jquery.min.js'}"></script>
+<script th:src="@{'/javascripts/application.js'}"></script>
+</body>
+</html>
